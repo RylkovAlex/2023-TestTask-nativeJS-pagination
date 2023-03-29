@@ -1,5 +1,4 @@
 import TodoListController from './controllers/TodoList.controller.js';
-
 import LoaderComponent from './components/Loader.component.js';
 import PaginationComponent from './components/Pagination.component.js';
 import TodoListComponent from './components/TodoList.component.js';
@@ -16,7 +15,7 @@ const todoListController = new TodoListController(
   LoaderComponent
 );
 
-// роутинг вроде работает, но нормально не тестил:
+// роутинг просто для примера реализован:
 const pageStr = new URL(window.location).searchParams.get('page');
 const page = +pageStr || 1;
 todoListController.on(TodoListController.EVENTS.PAGE_UPDATE, (page) => {

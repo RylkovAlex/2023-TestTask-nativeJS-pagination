@@ -99,7 +99,7 @@ export default class LoaderComponent extends AbstractComponent {
     this.init();
   }
 
-  // Не лучшая идея, здесь так делаю просто для примера, чтоб стили жили внутри компонента, а не в отдельном файле:
+  // Не лучшая идея для продакшен, здесь так делаю просто для примера, чтоб стили жили внутри файла компонента, а не в отдельном файле:
   init() {
     document.head.insertAdjacentHTML(
       'afterBegin',
